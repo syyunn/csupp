@@ -1,0 +1,123 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\renewcommand{\figurename}{그림}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+% == Line-spacing
+\usepackage{setspace}
+\usepackage[bottom]{footmisc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\usepackage{footnotebackref}
+
+% == for \blacksquare
+\usepackage{amssymb}
+
+% == caption
+\usepackage{caption}
+\captionsetup[figure]{font={stretch=1.8}} 
+
+\urlstyle{same}
+
+
+% == BIBLOGRAPHY == 
+\usepackage{natbib}
+
+% == LEFT ALIGN 
+\usepackage{amsmath}
+
+% == TO PUT CODES
+\usepackage{listings}
+
+
+\usepackage{diagbox}
+
+
+\bibliographystyle{apsr}
+
+
+% == TO USE DIAGRAM
+% \usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+
+% === TO USE \includegraphics{}
+\usepackage{graphicx}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+% === USE OF SUBSUBSUBSECTION
+\makeatletter
+\newcommand\subsubsubsection{\@startsection{paragraph}{4}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\newcommand\subsubsubsubsection{\@startsection{subparagraph}{5}{\z@}{-2.5ex\@plus -1ex \@minus -.25ex}{1.25ex \@plus .25ex}{\normalfont\normalsize\bfseries}}
+\makeatother
+% +++
+
+% === USE OF UNDERLINE IN LSTLISTING
+
+% === INDENT FIRST SENTENCE 
+\usepackage{indentfirst}
+% ===/
+
+
+% === DOCUMENT BOUNDARY ===
+\addtolength{\hoffset}{-0.75in} 
+\addtolength{\voffset}{-1.25in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\textheight}{2.25in}
+
+\renewcommand{\baselinestretch}{1.8}
+
+% == INCREASE SUBSUBSECTION FONTSIZE
+\usepackage{titlesec}
+% \titleformat*{\subsubsection}{\large\bfseries}
+
+
+\usepackage[title, toc, page]{appendix}
+
+\renewcommand\appendixpagename{Test}
+
+
+\usepackage{titlesec}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+% == ENVS ==
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{
+  \end{center}
+}
+
+% == UseCutomPDF
+\usepackage{pdfpages}
+
+% == CMMDS ==
+\newcommand{\tit}{
+\textbf{
+K-TRACK: 빅데이터·인공지능 기술을 활용한 대미통상 전략대응 지능화 플랫폼 개발 방안
+}\\
+% [2mm]\large 미국로비활동공개법 및 UN무역데이터를 중심으로
+}
+
+
+% == START (PageCounter, Mode)
+\begin{document}
+lipsum
+\end{document}
+
+
